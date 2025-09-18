@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Portal</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="portal-header">
+    <div class="header-left">
+      <i class="fas fa-shield-alt"></i>
+      <div class="header-title-group">
+        <div class="main-title">Admin Dashboard</div>
+      </div>
+    </div>
+    <button id="admin-logout-btn" class="header-logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+  <div class="portal-container">
+    <h1>Admin Controls</h1>
+
+    <button onclick="loadUsers()">👥 View Users</button>
+    <button onclick="loadSOS()">🚨 View SOS Alerts</button>
+    <button onclick="loadMedical()">🏥 View Medical Requests</button>
+    <button onclick="loadIncidents()">⚡ View Incidents</button>
+
+    <div id="admin-content" style="margin-top:20px;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

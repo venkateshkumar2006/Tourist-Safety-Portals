@@ -1,0 +1,170 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.portal-header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portal-header .header-left {
+  display: flex;
+  align-items: center;
+}
+
+.portal-header i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.header-title-group .main-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-title-group .sub-title {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.header-logout-btn {
+  background: #e74c3c;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.header-logout-btn:hover {
+  background: #c0392b;
+}
+
+/* ===== Containers ===== */
+.portal-container {
+  max-width: 500px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.portal-container h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* ===== Forms ===== */
+form {
+  margin-bottom: 20px;
+}
+
+form h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #34495e;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #2980b9;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1f6391;
+}
+
+/* ===== Messages ===== */
+#message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* ===== User Portal ===== */
+.user-portal-container {
+  text-align: center;
+}
+
+.menu-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.menu-icons button {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #27ae60;
+}
+
+.menu-icons button:hover {
+  background: #1e874b;
+}
+
+/* ===== Page Content ===== */
+#page-content {
+  margin-top: 25px;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 120px;
+}
+
+/* ===== Admin Portal ===== */
+.portal-container ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.portal-container ul li {
+  padding: 12px;
+  background: #ecf0f1;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  font-size: 15px;
+}

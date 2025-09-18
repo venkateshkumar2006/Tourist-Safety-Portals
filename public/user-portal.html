@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Portal</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="portal-header">
+    <div class="header-left">
+      <i class="fas fa-user"></i>
+      <div class="header-title-group">
+        <div class="main-title">User Portal</div>
+        <div class="sub-title">Tourist Dashboard</div>
+      </div>
+    </div>
+    <button id="logout-btn" class="header-logout-btn">Logout</button>
+  </header>
+
+  <div class="portal-container user-portal-container">
+    <h1>Hello, <span id="username-display"></span></h1>
+    <div class="menu-icons">
+      <button onclick="openPage('home')">🏠 Home</button>
+      <button onclick="openPage('blockchain')">🔗 Blockchain</button>
+      <button onclick="openPage('sos')">🚨 SOS</button>
+      <button onclick="openPage('medical')">🏥 Medical Help</button>
+      <button onclick="openPage('geo')">🌍 Geo-fencing</button>
+      <button onclick="openPage('incident')">⚡ Incident Report</button>
+      <button onclick="openPage('disaster')">🌪️ Disaster Alerts</button>
+      <button onclick="logout()">🔒 Signout</button>
+    </div>
+
+    <!-- Sections -->
+    <div id="page-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

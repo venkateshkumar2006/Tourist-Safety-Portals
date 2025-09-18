@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="portal-header">
+    <div class="header-left">
+      <i class="fas fa-shield-alt logo-icon"></i>
+      <div class="header-title-group">
+        <div class="main-title">Tourist Safety Portal</div>
+        <div class="sub-title">Login / Register</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="portal-container login-page-container">
+    <h1>Welcome</h1>
+
+    <!-- Login Form -->
+    <form id="login-form">
+      <h2>Login</h2>
+      <label>Email:</label>
+      <input type="email" id="login-email" required />
+      <label>Password:</label>
+      <input type="password" id="login-password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <hr/>
+
+    <!-- Registration Form -->
+    <form id="register-form">
+      <h2>Register</h2>
+      <label>Name:</label>
+      <input type="text" id="reg-name" required />
+      <label>Age:</label>
+      <input type="number" id="reg-age" required />
+      <label>Gender:</label>
+      <select id="reg-gender">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+      <label>Mobile:</label>
+      <input type="text" id="reg-mobile" required />
+      <label>Language:</label>
+      <select id="reg-lang">
+        <option>English</option>
+        <option>Hindi</option>
+        <option>Tamil</option>
+        <option>French</option>
+        <option>Chinese</option>
+        <option>Spanish</option>
+      </select>
+      <label>Email:</label>
+      <input type="email" id="reg-email" required />
+      <label>Password:</label>
+      <input type="password" id="reg-password" required />
+      <button type="submit">Register</button>
+    </form>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
